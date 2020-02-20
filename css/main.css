@@ -400,7 +400,7 @@ nav {
     position: absolute;
     transition: .6s; }
   .map:hover:before {
-    background: none; }
+    display: none; }
 
 /*####  Maps  ####*/
 /*####  Footer  ####*/
