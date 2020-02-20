@@ -524,7 +524,7 @@ img{
   transition: .6s;
 }
 &:hover:before{
-  background: none;
+  display: none;
 }
 }
 
@@ -538,10 +538,6 @@ img{
 }
 
 .footer {
-  &_container {
-
-  }
-
   &_logo {
     width: 18%;
     margin-right: 30px;
