@@ -14,8 +14,17 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/animate.css">
+    <script src="//code.jivosite.com/widget/c8kuxzSHzd" async></script>
 </head>
 <body>
+
+<div class="preloader">
+    <div class="preloader_content">
+        <div class="preloader_first"></div>
+        <div class="preloader_second"></div>
+        <div class="preloader_third"></div>
+    </div>
+</div>
 
 <div class="top_line">
     <div class="container top_line_container">
@@ -70,10 +79,13 @@
 
             <div class="row">
                 <div class="col-5">
-                    <h3 class="section_title wow swing">грузоперевозки <br> по европе</h3>
+                    <h3 class="section_title wow jello">грузоперевозки <br> по европе</h3>
                     <p class="services_description">Страны Евросоюза, а также Украина,<br> Белоруссия со всеми
                         документами.</p>
-                    <a href="#" class="services_button">подробнее</a>
+                    <a href="#" class="services_button">
+                        <span class="services_button_text">подробнее</span>
+                        <span class="services_button_waves"></span>
+                    </a>
                 </div>
                 <div class="col-7">
                     <div class="services_picture"></div>
@@ -84,7 +96,10 @@
                     <h3 class="section_title">грузоперевозки <br> по европе</h3>
                     <p class="services_description">Страны Евросоюза, а также Украина,<br> Белоруссия со всеми
                         документами.</p>
-                    <a href="#" class="services_button">подробнее</a>
+                    <a href="#" class="services_button">
+                        <span class="services_button_text">подробнее</span>
+                        <span class="services_button_waves"></span>
+                    </a>
                 </div>
                 <div class="col-7">
                     <div class="services_picture"></div>
@@ -95,7 +110,10 @@
                     <h3 class="section_title">грузоперевозки <br> по европе</h3>
                     <p class="services_description">Страны Евросоюза, а также Украина,<br> Белоруссия со всеми
                         документами.</p>
-                    <a href="#" class="services_button">подробнее</a>
+                    <a href="#" class="services_button">
+                        <span class="services_button_text">подробнее</span>
+                        <span class="services_button_waves"></span>
+                    </a>
                 </div>
                 <div class="col-7">
                     <div class="services_picture"></div>
@@ -242,7 +260,7 @@
 <section id="footer">
     <div class="container footer_container">
         <div class="row footer_row">
-        <a href="#" class="footer_logo wow fadeIn"><img src="images/black-logo.png" alt=""></a>
+        <a href="#" class="footer_logo wow bounceInLeft"><img src="images/black-logo.png" alt=""></a>
         <div class="footer_description">
             <p class="footer_description_location">123456, Санкт-Петербург, Невский пр-кт 127</p>
             <a class="footer_description_mail" href="#">sales@log.ru</a>
@@ -266,8 +284,7 @@
             nav: true,
             smartSpeed: 1000,
             autoplayTimeout:3000,
-            autoplay: true,
-
+            // autoplay: true,
             navText: ["<div class='nav-btn next-slide'><span class=\"icon-left\"></span><span class='next-slide_description'>назад</span></div>",
 
                 "<div class='nav-btn prev-slide'><span class='prev-slide_description'>след</span><span class=\"icon-right\"></span></div>"],
@@ -280,6 +297,7 @@
     new WOW().init();
 </script>
 <script src="./js/script.js"></script>
+
 </body>
 </html>
 

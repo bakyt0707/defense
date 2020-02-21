@@ -1,4 +1,7 @@
 @media (max-width: 992px){
+    body.lock{
+        overflow: hidden;
+    }
     .mobile-btn{
         display: flex;
         z-index: 12;
@@ -27,7 +30,7 @@
         justify-content: center;
         align-items: center;
         position: fixed;
-        background: rgb(255, 210, 113);
+        background: #2F343A;
         height: 100%;
         width: 100%;
         top: 0;
@@ -38,11 +41,14 @@
     .menu_item{
         right: 0;
     }
+    .menu_item:before{
+        display: none;
+    }
     .show-menu_item{
         font-size: 20px;
         margin-bottom: 18px;
-        border: 1px solid #2F343A;
-        color: #2F343A;
+        border: 1px solid #ffffff;
+        color: #ffffff;
         width: 200px;
         text-align: center;
         padding: 12px 0;
@@ -87,9 +93,11 @@
     }
 
     .services_button {
-        font-size: 14px;
         width: 182px;
         padding: 15px 0;
+    }
+    .services_button_text{
+        font-size: 14px;
     }
 
     .nav-btn {
@@ -99,12 +107,14 @@
     .nav-btn:hover {
         font-size: 16px;
     }
-.next-slide{
-    bottom: 68px;
-}
-.prev-slide{
-    top: 38px;
-}
+
+    .next-slide {
+        bottom: 68px;
+    }
+
+    .prev-slide {
+        top: 38px;
+    }
     .prev-slide_description {
         margin-right: 20px;
     }
@@ -138,7 +148,6 @@
     }
 
     #about_company:before {
-        height: 76%;
         transform: translateY(-85px);
     }
 
@@ -195,6 +204,8 @@
 }
 
 
+
+
 @media screen and (max-width: 992px) {
     .container {
         max-width: 750px;
@@ -245,6 +256,8 @@
 
 }
 
+
+
 @media screen and (max-width: 768px) {
     .container {
         max-width: 520px;
@@ -257,7 +270,9 @@
     .col-4 {
         width: 48.2%;
     }
-
+.preloader{
+    --size: 80px;
+}
     .top_line {
         padding: 12px 0;
     }
@@ -328,7 +343,7 @@
         font-size: 15px;
     }
     #about_company:before{
-        height: 100%;
+        height: 58%;
     }
     .about_company_description {
         font-size: 14px;
@@ -410,7 +425,9 @@
     .logo {
         margin-right: 12px;
     }
-
+.icon-gps{
+    display: none;
+}
     .header_icon {
         margin-right: 8px;
     }
@@ -418,7 +435,7 @@
     .header_icon:before {
         height: 35px;
         left: -4px;
-        transform: translateY(-4px);
+        transform: translateY(-17px);
     }
 
     .hero_content_title {
@@ -463,6 +480,9 @@
     }
     #about_company{
         padding: 80px 0 45px;
+    }
+    #about_company:before{
+        height: 64%;
     }
     .about_company_text{
         margin: 0;
@@ -520,5 +540,37 @@
 
     #footer {
         padding: 15px 15px 30px
+    }
+    .preloader{
+        --size: 60px;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .container {
+        max-width: 318px;
+    }
+    #about_company:before{
+        height: 475px;
+    }
+    .closeIcon_1U{
+        position: absolute;
+        left: 1px;
+        z-index: 8;
+        top: -30px;
+    }
+    .preloader{
+        --size: 50px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .container {
+        max-width: 314px;
+    }
+    #about_company:before{
+        height: 475px;
     }
 }
